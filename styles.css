@@ -1,43 +1,47 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #928787;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.container {
-    background-color: #4b3c3c;
+/* Common Form Styling */
+form {
+    background-color: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
-}
-
-h2 {
-    margin-bottom: 20px;
-}
-
-form {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
-input, textarea, button {
-    margin-bottom: 10px;
+input[type="text"], input[type="email"], input[type="password"], input[type="number"] {
     padding: 10px;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    border: 1px solid #da6060;
+    font-size: 1rem;
 }
 
 button {
-    background-color: #007bff;
-    color: #ffffff;
+    padding: 10px;
     border: none;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1rem;
+    border-radius: 4px;
     cursor: pointer;
 }
 
@@ -45,7 +49,37 @@ button:hover {
     background-color: #0056b3;
 }
 
-textarea {
-    resize: none;
-    height: 100px;
+/* Heading Styles */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+/* Result Display */
+#result {
+    margin-top: 20px;
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+}
+
+#result h3 {
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+#result ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#result li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
